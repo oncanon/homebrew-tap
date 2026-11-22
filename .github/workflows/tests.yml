@@ -1,0 +1,24 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: macos-15
+    steps:
+      - id: setup
+        uses: Homebrew/actions/setup-homebrew@61b401267256bb9c047d6d1481b176d5772a0ba7 # main 2026-11-21
+      - run: brew style oncanon/tap
+      - run: brew audit --strict --tap=oncanon/tap
+      - name: Install and test the formula and the cask
+        run: |
+          brew install oncanon/tap/canon
+          brew test oncanon/tap/canon
+          brew install --cask oncanon/tap/canon-app
+          test -d /Applications/Canon.app
