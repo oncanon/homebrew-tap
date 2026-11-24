@@ -5,10 +5,10 @@ cask "canon-app" do
   url "https://github.com/oncanon/canon/releases/download/v#{version}/Canon-#{version}.zip"
   name "Canon"
   desc "Menu bar companion for the Canon publishing workstation"
-  homepage "https://oncanon.com/"
+  homepage "https://oncanon.dev/"
 
   livecheck do
-    url "https://oncanon.com/appcast.xml"
+    url "https://oncanon.dev/appcast.xml"
     strategy :sparkle
   end
 

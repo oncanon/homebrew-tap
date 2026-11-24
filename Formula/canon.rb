@@ -1,6 +1,6 @@
 class Canon < Formula
   desc "Deterministic, content-addressed typesetting for technical briefs"
-  homepage "https://oncanon.com/"
+  homepage "https://oncanon.dev/"
   url "https://github.com/oncanon/canon/releases/download/v0.1.0/canon-0.1.0.tgz"
   sha256 "0000000000000000000000000000000000000000000000000000000000000000"
   license "Apache-2.0"

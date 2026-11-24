@@ -1,6 +1,6 @@
 # oncanon/homebrew-tap
 
-Homebrew tap for [Canon](https://oncanon.com/).
+Homebrew tap for [Canon](https://oncanon.dev/).
 
 ```sh
 brew install --cask oncanon/tap/canon-app   # Canon.app and the canon CLI
