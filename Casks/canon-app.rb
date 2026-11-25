@@ -1,6 +1,6 @@
 cask "canon-app" do
-  version "0.1.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  version "0.1.2"
+  sha256 "764aac1fa8f52277304f9dad83db14544104876be07be34e0829e9c23ebaef60"
 
   url "https://github.com/oncanon/canon/releases/download/v#{version}/Canon-#{version}.zip"
   name "Canon"
